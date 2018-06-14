@@ -30,3 +30,10 @@ popd
 
 popd # trust-metrics
 echo 'DONE!'
+
+git clone https://github.com/IOAyman/trust-network-examples.git
+pushd trust-network-examples
+echo
+python simple-trust-network.py -h
+echo
+python simple-trust-network.py data/users_from_to.csv -o data/users_from_to_results.csv
