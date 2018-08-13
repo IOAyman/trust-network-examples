@@ -11,7 +11,7 @@ rm -rf trust-metrics && git clone --depth=2 --branch='fix/includes-dir' https://
 pushd trust-metrics
 
 echo 'Installing python dependencies'
-apt-get install -y python-{dev,setuptools,pip} graphviz-dev libglib2.0{,-dev} build-essential
+apt-get install -y python-{dev,setuptools,pip} graphviz-dev libglib2.0{,-dev} build-essential tzdata
 pip install numpy scipy pyparsing pygnuplot pygraphviz networkx==0.37
 
 echo 'Installing netconv-0.12'
