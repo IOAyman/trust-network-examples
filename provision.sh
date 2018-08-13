@@ -12,7 +12,7 @@ pushd trust-metrics
 
 echo 'Installing python dependencies'
 apt-get install -y python-{dev,setuptools,pip} graphviz-dev libglib2.0{,-dev} build-essential
-pip install numpy scipy pyparsing gnuplot pygraphiz networkx==0.37
+pip install numpy scipy pyparsing pygnuplot pygraphviz networkx==0.37
 
 echo 'Installing netconv-0.12'
 tar xvf netconv-0.12.tar.gz
